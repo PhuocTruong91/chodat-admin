@@ -1,13 +1,61 @@
-body {
+body{
+  font-size: 14px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #EFEDED;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+a * {
+  color: black;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0
+}
+.d-none{
+  display: none !important;
+}
+
+@font-face {
+font-family: "font-regular";
+src: local("GilroyRegular"),   url(./fonts/GilroyRegular.otf) format("truetype");
+}
+@font-face {
+font-family: "font-bold";
+src: local("GilroyRegular"),   url(./fonts/GilroyBold.otf) format("truetype");
+}
+@font-face {
+font-family: "font-light";
+src: local("GilroyRegular"),   url(./fonts/GilroyLight.otf) format("truetype");
+}
+
+body{
+  font-family: "font-regular";
+}
+.bold{
+  font-family: "font-bold" !important;
+}
+.light{
+  font-family: "font-light" !important;
+}
+.upper{
+  text-transform: uppercase;
+}
+.disabled-click{
+  pointer-events: none;
+}
+.mt-30{
+  margin-top: 30px;
 }

@@ -1,0 +1,67 @@
+.spinner{
+    z-index: 2000;
+    .container{
+        background-color: transparent; 
+        text-align: center;
+    }
+}
+.popup{
+    .container{
+        .close-icon{
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+        text-align: center;
+        padding: 50px 15px;
+        min-width: 600px;
+        svg{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        .title{
+            font-size: 15px;
+            font-family: 'font-bold';
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            span{
+                font-size: 16px;
+                font-family: 'font-bold';
+                text-transform: uppercase;
+            }
+        }
+        .content{
+            margin-bottom: 15px;
+            .supportContact{
+                font-family: 'font-bold';
+                color: #F4C245;
+            }
+        }
+
+        .to-payment a{
+            color: white;
+        }
+        .group-button{
+            display: flex;
+            width: 70%;
+            margin: auto;
+            p{
+                flex: 1;
+                a{
+                    color: #F4C245;
+                }
+                &:first-child{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .basic-button{
+            width: fit-content;
+            margin: auto;
+        }
+    }
+}

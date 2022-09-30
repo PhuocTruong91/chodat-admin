@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import {Component} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import IndexPages from './template/pages/IndexPages';
+import Header from './template/common/Header';
+import Footer from './template/common/Footer';
+import {getUserInfo} from './controller/User';
+
+
+import { BrowserRouter} from "react-router-dom";
+class App extends Component {
+    
+  componentDidMount() {
+      if(localStorage.token){
+          getUserInfo();
+      }
+  }
+
+  render() { 
+      return (  
+          <div>
+              <BrowserRouter>
+                  <Header></Header>
+                  <IndexPages></IndexPages>
+                  <Footer></Footer>
+              </BrowserRouter>
+          </div>
+      );
+  }
 }
 
 export default App;

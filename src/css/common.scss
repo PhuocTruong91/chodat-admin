@@ -1,0 +1,58 @@
+.un-show-popup{
+    opacity: 0 !important;
+    pointer-events: none;
+}
+.basic-button{
+    padding: 8px 24px;
+    background: #F4C245;
+    border-radius: 6px;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all .3s;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    &:hover{
+        opacity: .8;
+    }
+    &.light{
+        color: #F4C245;
+        background-color: transparent;
+        border: 1px solid #F4C245;
+    } 
+    &.disabled{
+        background-color: gainsboro !important;
+        pointer-events: none;
+    }
+    &.fitcontent{
+        width: fit-content;
+        margin: auto;
+    }
+}
+.basic-input{
+    border-bottom: none;
+    padding: 10px 20px;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    font-weight: normal;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    &.input-error{
+        border: 1px solid red;
+    }
+    &::placeholder{
+        color: #AFAFAF;
+    }
+    @media screen and (max-width: 768px){        
+        padding: 8px 15px 8px 10px;  
+    }
+}
+.d-mb{
+    @media screen and (min-width: 768px){        
+        display: none !important;  
+    }
+}

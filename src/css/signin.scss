@@ -1,0 +1,164 @@
+.signin-container{
+    padding: 100px 200px;
+    @media screen and (max-width: 1440px){        
+        padding: 30px 100px;
+    }
+    @media screen and (max-width: 768px){        
+        padding: 100px 10px;
+    }
+    .signin{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);  
+        border-radius: 6px;
+        display: flex;
+        @media screen and (max-width: 768px){        
+            flex-direction: column;  
+        }
+        > div{
+            flex: 1;
+            padding: 30px;
+        }
+
+        .left{
+            position: relative;
+            #error{
+                width: fit-content;
+                top: 30px;
+                right: 30px;
+                left: unset;
+                transform: unset;
+                @media screen and (max-width: 768px){        
+                    right: unset;
+                    top: 10px;  
+                }
+            }
+            > input{
+                margin-bottom: 15px;
+                &::placeholder{
+                    text-transform: uppercase;
+                }
+            }
+            .row{
+                justify-content: space-between;
+                margin-bottom: 15px;
+                .remember{
+                    margin-bottom: 10px;
+                }
+                > div{
+                    display: flex;
+                    align-items: center;
+                }
+                .remember{
+                    label{
+                        cursor: pointer;
+                        color: #F4C245;
+                    }
+                    input{
+                        width: 15px;
+                        height: 15px;
+                        margin-top: 0;
+                        margin-right: 5px;
+                        accent-color: #F4C245;
+                    }
+                }
+                .account-action{
+                    p{
+                        font-family: 'font-light';
+                        color: #F4C245;
+                        &:first-child{
+                            border-right: 1px solid #F4C245;
+                            padding-right: 10px;
+                        }
+                        &:nth-child(2){
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+            .signin-button {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+            .support{
+                background-color: unset;
+                color: #FF0000;
+            }
+            .group-sendOtp{
+                .basic-input{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+        .right {
+            background-color: #F9F9F9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .up{
+                .upper{
+                    font-family: 'font-light';
+                    text-align: center;
+                    font-size: 16px;
+                    margin-bottom: 20px
+                }
+                .basic-button{
+                    width: fit-content;
+                    margin: auto;
+                    white-space: nowrap;
+                }
+            }
+
+            > p{
+                margin: 30px 0;
+                text-align: center;
+            }
+            .down{
+                p{
+                    margin-bottom: 15px;
+                }
+                .google{
+                    background-color: #E23D3D;
+                }
+                .facebook{
+                    background-color: #3F7FE8;
+                }
+            }
+        }
+
+        .title{
+            font-size: 18px;
+            color: #F4C245;
+            margin-bottom: 10px;
+        }
+
+        .accept-term{
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+            label{
+                color: #AFAFAF;
+                font-family: 'font-light';
+                cursor: pointer;
+                span{
+                    font-family: 'font-bold';
+                    color: #F4C245;
+                }
+            }
+            input{
+                width: 15px;
+                height: 15px;
+                margin-bottom: 0;
+                margin-top: 0;
+                margin-right: 5px;
+                accent-color: #F4C245;
+            }
+        }
+    }
+    .signin{
+        margin-bottom: 100px;
+        @media screen and (max-width: 768px){        
+            margin-bottom: 30px;  
+        }
+    }
+}
